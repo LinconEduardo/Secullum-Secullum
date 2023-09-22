@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Secullum Secullum</title>
+	   	<link rel="icon" href="imagens/t.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="imagens/t.ico" type="image/x-icon" />
+	    <meta charset="utf-8">
+		<script src="pesquisa.js"></script>	   
+	<link rel = "stylesheet" href = "teste.css" type = "text/css">
+   </head>
+   <body>
+   <div id="menutopo">
+   		<ul>
+
+	</ul>
+   </div>
+   <div id="logo">
+   <a href="https://www.secullum.com.br/" target="_blank"><img src ="imagens\logo.png" id="imglog"></a>
+   </div>
+   <div id="registro">
+		<div id="barrapesquisa">
+		<form>
+			<label for="pesquisa">Buscar: </label>
+			   <select id=combo>
+					<option value="http://bugtracker.secullum.com.br/edit_bug.aspx?id=">Case</option>
+					<option value="https://secullum.octadesk.com/home/ticket/edit/">Ticket</option>
+					<option value="https://www.secullum.com.br/pt/canal-cliente/perguntas/">PF</option>
+				</select>
+			<input type="text" value="" placeholder="Digite o ID..." id="url">
+			<button type="submit" onclick="abreJanela()">Ok</button>
+		</form>
+		</div>
+	</div>
+   <div id="menu">
+		<ul class="menu"> 
+		
+			<li><a href="#">Sites</a>
+				<ul class="submenu">
+					<li><a href="https://secullum.octadesk.com/home/tickets/customList/5e738bbc-3246-4cce-a61f-41dbf0720c41/" target="_blank">Octadesk</a></li>
+					<li><a href="https://outlook.office.com/owa/?realm=secullum.com.br&exsvurl=1&ll-cc=1046&modurl=0&path=/calendar/view/WorkWeek" target="_blank">Calendário</a></li>
+					<li><a href="http://secullum-infra/bugtracker/" target="_blank">Bugtracker</a></li>
+					<li><a href="http://mail.secullum.com.br:8081/forum/" target="_blank">Fórum</a></li>
+					<li><a href="https://trello.com/" target="_blank">Trello</a></li>
+             </li>
+			 </ul>
+			 		 
+			 <li><a href="#">Suporte</a>
+				<ul class="submenu">
+					<li><a href="https://www.secullum.com.br/ponto4web/999000001" target="_blank">Cartão Ponto</a></li>
+					<li><a href="https://www.secullum.com.br/Ponto4Web/43690#login" target="_blank">ModWeb Teste</a></li>					
+					<li><a href="https://www.4devs.com.br/" target="_blank">Gerador de dados</a></li>
+					<li><a href="https://1drv.ms/w/s!AivnspFHfKtHg1W2I-9bL6U5p8hF?e=Ij6UBd" target="_blank">Laudo Técnico</a></li>					
+					<li><a href="https://www.evernote.com/l/AbegfICwj9FHFIRtvEt9slpeEr_QgXIBDkc/" target="_blank">Senhas</a></li>				
+					</li>
+					</ul>
+
+			 <li><a href="#">Manuais</a>
+				<ul class="submenu">
+                    <li><a href="https://www.secullum.com.br/novositeapi/imagens/bfe1b007-7178-4284-ab63-647e7bffb7f1" target="_blank">Acesso Remoto</a></li>
+					<li><a href="https://www.evernote.com/l/Aj4LBNSowR1KxLLJtDptIn5EmC3tAzw-NN0/" target="_blank">Equipamentos</a></li>
+					<li><a href="https://www.secullum.com.br/pt/canal-cliente/perguntas/661" target="_blank">SQL</a></li>					
+					<li><a href="https://www.evernote.com/l/Aj5W-ONLQspFy4f4WmIuIhAOSnRD18zbbQQ/" target="_blank">Extra +</a></li>
+					</ul>
+                    </li>
+			 
+			 	<li><a href="#">Downloads</a>
+				<ul class="submenu">
+					<li><a href="https://www.evernote.com/l/AbclozfhGZxLKbl8doGXmUzghN0Ooc7t814/" target="_blank">Pacotes +</a></li>
+					</ul>
+                    </li>
+			     
+	</div>
+   <div id="conteudo">
+   <div id="produto">   
+   	    <div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Secullum Ponto</a>
+						<ul class="submenu2">
+							<li><a href="https://autenticador.secullum.com.br/Authorization?response_type=code&client_id=3&redirect_uri=https://pontoweb.secullum.com.br/Auth" target="_blank">Acesso</a></li>
+							<li><a href="https://www.secullum.com.br/PontoWebComunicacaoSetup.exe" target="_blank">Comunicador</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.secullum.pontoweb.centraldofuncionario" target="_blank">Instalador APP</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/pontoweb" target="_blank">Sobre</a></li>
+                            <li><a href="https://www.secullum.com.br/pt/canal-cliente/perguntas/948" target="_blank">Sobre APP</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr8.png" id="imgproduto">
+		</div>
+   
+   		<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Ponto 4</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/ponto4/Pontosec4-setup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.secullum.ponto4.moduloweb" target="_blank">Instalador APP</a></li>
+							<li><a href="https://www.secullum.com.br/at-ponto4.exe" target="_blank">Atualizador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/ponto4 " target="_blank">Sobre</a></li>
+                            <li><a href="https://www.secullum.com.br/pt/canal-cliente/perguntas/1023" target="_blank">Sobre APP</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr2.ico" id="imgproduto">
+		</div>
+		
+		<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Acesso.net</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/acessonet/AcessoNetSetup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://www.secullum.com.br/at-acessonet.exe" target="_blank">Atualizador</a></li>
+							<li><a href="http://acessonetweb.secullum.com.br/Teste/Paginas/pgLogin.aspx" target="_blank">Web</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/acessonet" target="_blank">Sobre</a></li>
+							
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr1.ico" id="imgproduto">
+		</div>
+
+		<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Academia.net</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/academianet/academianetsetup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.secullum.academianet" target="_blank">Instalador APP</a></li>
+							<li><a href="https://www.secullum.com.br/at-academianet.exe" target="_blank">Atualizador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/academianet" target="_blank">Sobre</a></li>
+                            <li><a href="https://www.secullum.com.br/pt/canal-cliente/perguntas/998" target="_blank">Sobre APP</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr3.ico" id="imgproduto">
+		</div>
+		
+
+		
+		<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Escola.net</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/escolanet/escolanetsetup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://www.secullum.com.br/at-escolanet.exe" target="_blank">Atualizador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/escolanet" target="_blank">Sobre</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.secullum.escolanet" target="_blank">Instalador APP</a></li>
+                            <li><a href="https://www.secullum.com.br/pt/canal-cliente/perguntas/946" target="_blank">Sobre APP</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr4.ico" id="imgproduto">
+		</div>
+		
+				<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Clube.net</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/clubenet/clubenetsetup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://www.secullum.com.br/at-clubenet.exe" target="_blank">Atualizador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/clubenet" target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr5.ico" id="imgproduto">
+		</div>
+
+		<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Estacionamento.net</a>
+						<ul class="submenu2">
+							<li><a href="https://www.secullum.com.br/estacionamentonet/EstacionamentoNetSetup.exe" target="_blank">Instalador</a></li>
+							<li><a href="https://www.secullum.com.br/at-estacionamentonet.exe" target="_blank">Atualizador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/estacionamentonet" target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr6.ico" id="imgproduto">
+		</div>
+						
+			    <div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Emob</a>
+						<ul class="submenu2">
+							<li><a href=https://play.google.com/store/apps/details?id=com.secullum.emob target="_blank">Instalador</a></li>
+							<li><a href=https://www.secullum.com.br/pt/canal-cliente/perguntas/945 target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\prn10.ico" id="imgproduto">
+		</div>
+		
+						
+			    <div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Checkin</a>
+						<ul class="submenu2">
+							<li><a href=https://play.google.com/store/apps/details?id=com.secullum.checkin target="_blank">Instalador</a></li>
+							<li><a href=https://www.secullum.com.br/pt/canal-cliente/perguntas/552 target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\prn11.ico" id="imgproduto">
+		</div>
+		
+				<div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Gateway</a>
+						<ul class="submenu2">
+							<li><a href="https://autenticador.secullum.com.br/Authorization?response_type=code&client_id=2&redirect_uri=https://gateway.secullum.com.br/Default/CallbackAutenticacao" target="_blank">Acesso</a></li>
+							<li><a href="https://gateway.secullum.com.br/GatewayComunicacaoSetup.exe" target="_blank">Comunicador</a></li>
+							<li><a href="https://www.secullum.com.br/pt/produtos/gateway" target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\pr7.png" id="imgproduto">
+		</div>
+		
+
+		
+	    <div id="item" class="item">
+				<ul class="menu2"> 
+					<li><a href="#">Henry Configs</a>
+						<ul class="submenu2">
+							<li><a href=https://www.secullum.com.br/SecHenryConfigs/SecHenryConfigSetup.exe target="_blank">Instalador</a></li>
+							<li><a href=https://www.secullum.com.br/at-HenryConfig.exe target="_blank">Atualizador</a></li>
+							<li><a href=https://www.secullum.com.br/secullum-henry-configuracoes target="_blank">Sobre</a></li>
+						</ul>
+					</li>
+				</ul>
+		<img src ="imagens\prn9.ico" id="imgproduto">
+		</div>	
+		</div>
+		</div>   
+	</body>
+</html>
